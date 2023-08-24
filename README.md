@@ -1,24 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Added the appointment model between patient and clinics
+- See `/spec/requests/` for api specs
+- Rather than Devise, theres a custom `login_as_patient` helper which just sets the patient id in the session cookie. This is used by ApplicationController to set the `current_patient`
